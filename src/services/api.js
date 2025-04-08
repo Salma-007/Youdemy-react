@@ -17,3 +17,11 @@ export const category = {
     updateCategory: (id, data) => api.post(`/v1/categories/${id}`, data),
     deleteGategory: (id) => api.post(`/v1/categories/${id}`),
 }
+
+export const tag = {
+    getTags: () => api.get("/v1/tags"),
+    getTag: (id) => api.get(`/v1/tags/${id}`),
+    createTag: (data) => api.post(`/v1/tags/${data}`),
+    updateTag: (id, data) => api.post(`/v1/tags/${id}`, data),
+    deleteTag: (id) => api.post(`/v1/tags/${id}`),
+}

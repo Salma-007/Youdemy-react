@@ -9,7 +9,7 @@ function Header(){
                 <ul>
                     <li><a href="#">Courses</a></li>
                     <li><Link to="/categories">Categories</Link></li>
-                    <li><a href="#">Tags</a></li>
+                    <li><Link to="/tags">Tags</Link></li>
                 </ul>
             </nav>
         </header>

@@ -27,7 +27,7 @@ try {
         {categories.map((ct, index) => (
           <div
             key={index}
-            className="bg-white shadow-md rounded-xl p-4 border hover:shadow-lg transition duration-300">
+            className="bg-white shadow-md rounded-xl p-4 border hover:shadow-lg transition duration-300-">
             <h2 className="text-xl font-semibold text-gray-800">{ct.name}</h2>
 
           </div>
