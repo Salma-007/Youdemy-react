@@ -1,4 +1,4 @@
-import Categories from './Categories.jsx'
+// import Categories from './Categories.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header.jsx'
 import CategoryList from './categories/CategoryList.jsx';
