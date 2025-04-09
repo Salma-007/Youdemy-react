@@ -3,6 +3,7 @@ import { category } from "../services/api";
 
 function AddCategory() {
   const [name, setName] = useState("");
+  const [parentId, setParentId] = useState(null); // Ajoutez cet état
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -33,15 +34,6 @@ function AddCategory() {
           />
         </div>
 
-        <div>
-          <label className="block text-gray-700">Catégorie parente (optionnelle)</label>
-          <input
-            type="number"
-            className="w-full border p-2 rounded mt-1"
-            value={parentId || ""}
-            onChange={(e) => setParentId(e.target.value)}
-          />
-        </div>
 
         <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
           Ajouter

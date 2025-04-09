@@ -16,7 +16,7 @@ function Header() {
               <Link to="/categories" className="hover:text-blue-600 transition">Categories</Link>
             </li>
             <li>
-              <Link to="/categories" className="hover:text-blue-600 transition">add category</Link>
+              <Link to="/categories/add" className="hover:text-blue-600 transition">add category</Link>
             </li>
             <li>
               <Link to="/tags" className="hover:text-blue-600 transition">Tags</Link>

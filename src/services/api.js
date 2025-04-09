@@ -13,7 +13,7 @@ export default api;
 export const category = {
     getCategories: () => api.get("/v1/categories"),
     getCategory: (id) => api.get(`/v1/categories/${id}`),
-    createCategory: (data) => api.post(`/v1/categories/${data}`),
+    createCategory: (data) => api.post("/v1/categories", data),
     updateCategory: (id, data) => api.post(`/v1/categories/${id}`, data),
     deleteGategory: (id) => api.post(`/v1/categories/${id}`),
 }

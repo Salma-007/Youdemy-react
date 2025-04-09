@@ -4,7 +4,7 @@ import Header from './Header.jsx'
 import CategoryList from './categories/CategoryList.jsx';
 import TagList from './tags/TagList.jsx';
 import CourseList from './courses/CourseList.jsx';
-import AddCategory from './courses/AddCategory.jsx';
+import AddCategory from './categories/AddCategory.jsx';
 import './App.css';
 
 function App() {
