@@ -25,3 +25,7 @@ export const tag = {
     updateTag: (id, data) => api.post(`/v1/tags/${id}`, data),
     deleteTag: (id) => api.post(`/v1/tags/${id}`),
 }
+
+export const course = {
+    getCourses: () => api.get("/v1/courses"), 
+  };
