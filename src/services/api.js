@@ -27,5 +27,14 @@ export const tag = {
 }
 
 export const course = {
-    getCourses: () => api.get("/v1/courses"), 
+    getCourses: () => api.get("/v1/courses"),
+    getCourse: (id) => api.get(`/v1/courses/${id}`),
+    createCourse: (data) => api.post("/v1/courses", data)
+    .then(response => response)
+    .catch(error => {
+      console.error("Backend error:", error.response?.data);
+      throw error;
+    }),
+    updateCourse: (id, data) => api.put(`/v1/courses/${id}`, data),
+    deleteCourse: (id) => api.delete(`/v1/courses/${id}`),
   };

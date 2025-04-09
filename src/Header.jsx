@@ -13,6 +13,9 @@ function Header() {
               <Link to="/courses" className="hover:text-blue-600 transition">Courses</Link>
             </li>
             <li>
+              <Link to="/courses/add" className="hover:text-blue-600 transition">Ajouter un cours</Link>
+            </li>
+            <li>
               <Link to="/categories" className="hover:text-blue-600 transition">Categories</Link>
             </li>
             <li>
