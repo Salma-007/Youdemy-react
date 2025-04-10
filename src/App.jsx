@@ -7,6 +7,7 @@ import CourseList from './courses/CourseList.jsx';
 import AddCategory from './categories/AddCategory.jsx';
 import AddCourse from './courses/AddCourse.jsx';
 import './App.css';
+import StatsDashboard from './StatsDashboard.jsx';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <Header />
       <Routes>
+      <Route path="/stats" element={<StatsDashboard />} />
       <Route path="/categories" element={<CategoryList />} /> 
       <Route path="/categories/add" element={<AddCategory />} />
       <Route path="/tags" element={<TagList />} /> 

@@ -38,3 +38,9 @@ export const course = {
     updateCourse: (id, data) => api.put(`/v1/courses/${id}`, data),
     deleteCourse: (id) => api.delete(`/v1/courses/${id}`),
   };
+
+export const stats = {
+  getCourseStats: () => api.get("v2/stats/courses"),
+  getCategoryStats: () => api.get("v2/stats/categories"),
+  getTagStats: () => api.get("v2/stats/tags"),
+}

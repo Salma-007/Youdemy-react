@@ -9,6 +9,9 @@ function Header() {
 
         <nav>
           <ul className="flex space-x-6 text-gray-700 font-medium">
+          <li>
+            <Link to="/stats" className="hover:text-blue-600 transition">Statistiques</Link>
+          </li>
             <li>
               <Link to="/courses" className="hover:text-blue-600 transition">Courses</Link>
             </li>
@@ -19,7 +22,7 @@ function Header() {
               <Link to="/categories" className="hover:text-blue-600 transition">Categories</Link>
             </li>
             <li>
-              <Link to="/categories/add" className="hover:text-blue-600 transition">add category</Link>
+              <Link to="/categories/add" className="hover:text-blue-600 transition">Ajouter categorie</Link>
             </li>
             <li>
               <Link to="/tags" className="hover:text-blue-600 transition">Tags</Link>
