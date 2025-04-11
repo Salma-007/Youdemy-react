@@ -6,7 +6,28 @@ const api = axios.create({
         "Content-Type": "application/json",
     },
     
-})
+});
+
+  // pour si on a login obligatoire
+  // api.interceptors.request.use(
+  //   (config) => {
+  //     const token = localStorage.getItem("auth_token");
+  //     if(token){
+  //       config.headers.Authorization = `bearer ${token}`
+  //     }
+  //     return config;
+  //   },(error) => {
+  //     return Promise.reject(error);
+  //   }
+  // );
+
+  // api.interceptors.response.use(
+  //   (response) => {
+  //     response.data.accessToken;
+  //   }, (error) => {
+  //     return Promise.reject(error);
+  //   }
+  // )
 
 export default api;
 

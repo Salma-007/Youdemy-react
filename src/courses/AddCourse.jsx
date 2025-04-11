@@ -9,6 +9,7 @@ function AddCourse() {
     level: "beginner",
     price: "",
     category_id: "",
+    status: "open"
   });
 
   const [success, setSuccess] = useState(false);
@@ -25,12 +26,13 @@ function AddCourse() {
     e.preventDefault();
     try {
 
-      const dataToSend = {
-        ...formData,
-        duration: parseInt(formData.duration),
-        price: parseFloat(formData.price),
-        category_id: formData.category_id ? parseInt(formData.category_id) : null
-      };
+        const dataToSend = {
+            ...formData,
+            duration: parseInt(formData.duration),
+            price: parseFloat(formData.price),
+            category_id: parseInt(formData.category_id)
+            
+          };
 
       console.log("Données à envoyer:", dataToSend); 
 
@@ -45,13 +47,17 @@ function AddCourse() {
         price: "",
         category_id: "",
       });
-    } catch (error) {
-      console.error("Erreur lors de l'ajout :", error);
-    }
+    }catch (error) {
+        console.error("Error response:", {
+          status: error.response?.status,
+          data: error.response?.data,
+          headers: error.response?.headers,
+        });
+      }
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className="max-w-2xl mx-auto p-6 bg-white shadow-md rounded-lg mt-5">
       <h2 className="text-2xl font-semibold mb-6 text-center">Ajouter un cours</h2>
       
       <form onSubmit={handleSubmit} className="space-y-4">

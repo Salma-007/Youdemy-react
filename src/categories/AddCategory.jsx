@@ -3,7 +3,7 @@ import { category } from "../services/api";
 
 function AddCategory() {
   const [name, setName] = useState("");
-  const [parentId, setParentId] = useState(null); // Ajoutez cet état
+  const [parentId, setParentId] = useState(null); 
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -20,7 +20,7 @@ function AddCategory() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg mt-5">
       <h2 className="text-2xl font-semibold mb-4 text-center">Ajouter une catégorie</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
