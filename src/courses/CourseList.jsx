@@ -39,7 +39,7 @@ function CourseList() {
   if (loading) return <div className="text-center py-10">Chargement...</div>;
 
   return (
-    <div className="py-10 px-6 bg-gray-50 min-h-screen">
+    <div className="py-10 px-6 bg-red-50 min-h-screen">
       <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-10">
         Tous les Cours 
       </h1>

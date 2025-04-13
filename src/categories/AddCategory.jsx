@@ -20,6 +20,7 @@ function AddCategory() {
   };
 
   return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-white py-10 px-6">
     <div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg mt-5">
       <h2 className="text-2xl font-semibold mb-4 text-center">Ajouter une catégorie</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -41,6 +42,7 @@ function AddCategory() {
 
         {success && <p className="text-green-600 mt-2">Catégorie ajoutée avec succès !</p>}
       </form>
+    </div>
     </div>
   );
 }

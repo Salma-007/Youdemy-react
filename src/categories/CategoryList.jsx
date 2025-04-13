@@ -18,7 +18,7 @@ function CategoryList() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-white py-10 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-white py-10 px-6">
       <h1 className="text-4xl font-extrabold text-center text-gray-800 mb-10">
         Catégories
       </h1>

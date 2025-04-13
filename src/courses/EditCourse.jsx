@@ -18,6 +18,8 @@ function EditCourse() {
         tags: []
     });
 
+    const [error, setError] = useState(null);
+
     const [loading, setLoading] = useState(true);
     const [success, setSuccess] = useState(false);
 
@@ -39,8 +41,8 @@ function EditCourse() {
                 });
                 setLoading(false);
             } catch (error) {
-                console.error("Error fetching course:", error);
-                navigate("/courses");
+                console.error("Update error:", error.response?.data);
+                setError(error.response?.data || "Une erreur est survenue");
             }
         };
 
