@@ -56,7 +56,16 @@ export const course = {
       console.error("Backend error:", error.response?.data);
       throw error;
     }),
-    updateCourse: (id, data) => api.put(`/v1/courses/${id}`, data),
+    updateCourse: (id, data) => api.put(`/v1/courses/${id}`, data)
+        .then(response => response.data)
+        .catch(error => {
+            console.error("Update error details:", {
+                status: error.response?.status,
+                data: error.response?.data,
+                config: error.config
+            });
+            throw error;
+        }),
     deleteCourse: (id) => api.delete(`/v1/courses/${id}`),
   };
 
